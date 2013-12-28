@@ -1,0 +1,25 @@
+extends layout
+
+block content
+	h2
+		My Great Blog Post
+	p This is some stuff that I know about that I want to talk about.
+
+
+	#troll-blocker.container
+		h3 Tell Us What You Think
+		form#formAddUser(name="adduser", method="post", action="/adduser")
+			input#inputUserName(type="text", placeholder="Enter your username", name="username")
+			input#inputUserEmail(type="text", placeholder="Enter your email address", name="useremail")
+			textarea(id="inputUserComment" type="text", placeholder="Enter your comment", name="comment")
+			button#btnSubmit(type="submit") Add your comment
+
+
+
+		h3 People Comments
+		ul
+			each user, i in userlist
+				if user.Comment
+					li
+						p.name #{user.username} says:
+						div.comment #{user.Comment}

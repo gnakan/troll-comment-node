@@ -1,0 +1,57 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.comment
+{
+	padding: 10px;
+}
+
+.name
+{
+	font-weight: 900;
+}
+
+form
+{
+	overflow:hidden;
+	margin-bottom: 20px;
+}
+
+input, textarea
+{
+	width: 100%;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul	
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+li
+{
+	margin: 0px;
+	background-color: #666;
+	color:white;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.container
+{
+	width: 400px;
+	margin: 0 auto;
+	background-color: #eee;
+	padding: 30px;
+}
